@@ -11,28 +11,24 @@
 <body>
   <header>
     <div id="logocontainer">
-      <img
-        id="logo"
-        src="https://raw.githubusercontent.com/bajpai244/workshopfilehosting/master/hackide/hackclublogo.png"
-        width="60px"
-      />
+      <img id="logo" src="https://raw.githubusercontent.com/bajpai244/workshopfilehosting/master/hackide/hackclublogo.png" width="60px" />
     </div>
     <div id="buttoncontainer">
-      <button onclick="buttonclick()"><b>RUN</b></button>
+      <button onclick="runCode()"><b>RUN</b></button>
     </div>
   </header>
 
   <main>
+    <div id="tabs">
+      <button onclick="switchTab('html')">HTML</button>
+      <button onclick="switchTab('css')">CSS</button>
+      <button onclick="switchTab('js')">JavaScript</button>
+    </div>
     <div id="editor"></div>
-    <iframe src="" id="iframe"> </iframe>
+    <iframe id="iframe"></iframe>
   </main>
-  <script
-    src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js"
-    type="text/javascript"
-    charset="utf-8"
-  ></script>
 
-  
+  <script src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
   <script src="script.js"></script>
 </body>
 
